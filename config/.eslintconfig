@@ -1,0 +1,10 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["htmlsafe"],
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "htmlsafe/no-html-safe": 2
+  }
+}
