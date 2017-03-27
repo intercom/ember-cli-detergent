@@ -2,12 +2,12 @@
 /* eslint-env node */
 'use strict';
 
-let HtmlSafeChecker = require('./lib/html-safe-checker');
+let HighTide = require('./lib/high-tide');
 
 module.exports = {
   name: 'ember-cli-high-tide',
 
   postBuild(result) {
-    HtmlSafeChecker.verify();
+    HighTide.process({ files: ['app']});
   }
 };

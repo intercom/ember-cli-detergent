@@ -13,12 +13,11 @@
   },
   "repository": "",
   "scripts": {
-    "build": "ember build",
-    "start": "ember server",
-    "test": "ember try:each"
+    "test": "mocha test"
   },
   "dependencies": {
-    "ember-cli-babel": "^5.1.7"
+    "ember-cli-babel": "^5.1.7",
+    "mocha": "^3.2.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
