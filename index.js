@@ -2,12 +2,12 @@
 /* eslint-env node */
 'use strict';
 
-let HighTide = require('./lib/high-tide');
+let Seer = require('./lib/seer');
 
 module.exports = {
-  name: 'ember-cli-high-tide',
+  name: 'ember-cli-seer',
 
   postBuild(result) {
-    HighTide.process({ files: ['app']});
+    Seer.track({ files: ['app', 'lib']});
   }
 };

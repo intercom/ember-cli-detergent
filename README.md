@@ -1,11 +1,11 @@
-# ember-cli-high-tide
+# ember-cli-seer
 
 This README outlines the details of collaborating on this Ember addon.
 
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd ember-cli-high-tide`
+* `cd ember-cli-seer`
 * `npm install`
 * `bower install`
 

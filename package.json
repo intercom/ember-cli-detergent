@@ -1,5 +1,5 @@
 {
-  "name": "ember-cli-high-tide",
+  "name": "ember-cli-seer",
   "version": "0.0.0",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
@@ -20,7 +20,9 @@
     "mocha": "^3.2.0"
   },
   "devDependencies": {
+    "chai": "4.0.2",
     "broccoli-asset-rev": "^2.4.5",
+    "babel-eslint": "7.0.0",
     "ember-ajax": "^2.4.1",
     "ember-cli": "2.11.0",
     "ember-cli-app-version": "^2.0.0",
@@ -45,9 +47,6 @@
     "eslint": "3.8.0",
     "eslint-plugin-htmlsafe": "0.0.0",
     "loader.js": "^4.0.10"
-  },
-  "engines": {
-    "node": ">= 0.12.0"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
