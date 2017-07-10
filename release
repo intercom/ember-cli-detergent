@@ -1,0 +1,30 @@
+#!/bin/bash
+# Bump a release of ember-cli-seer or push the Release to Gemfury
+#./release patch
+#./release minor
+#./release major
+#./release fury
+
+echo "--------------------------" &&
+echo "Grabbing the latest master" &&
+echo "--------------------------" &&
+git checkout master
+git fetch origin
+git reset --hard origin/master
+
+if [[ $1 == 'fury' ]]
+then
+  echo "------------------" &&
+  echo "Pushing to GemFury" &&
+  echo "------------------" &&
+  git push fury master
+else
+  echo "-------------------------------------------" &&
+  echo "Doing a $1 release of ember-cli-seer       " &&
+  echo "-------------------------------------------" &&
+  git branch -D ember-cli-seer/version_bump
+  git checkout -b ember-cli-seer/version_bump
+  npm version $1 --no-git-tag-version
+  git commit package.json -m "Bump the ember-cli-seer version"
+  git push origin ember-cli-seer/version_bump
+fi
