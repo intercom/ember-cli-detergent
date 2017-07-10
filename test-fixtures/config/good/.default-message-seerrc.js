@@ -1,8 +1,7 @@
 module.exports = {
-  js: [
-    {
-      methodName: 'foo',
+  methods: {
+   'foo': {
       allowed: 1
     }
-  ]
+  }
 };
