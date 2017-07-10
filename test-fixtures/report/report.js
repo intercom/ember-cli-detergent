@@ -1,5 +1,5 @@
 module.exports = [{
-  filePath: '/Users/ingrid/src/ember-cli-seer/test-fixtures/bad/bad.js',
+  filePath: '/Users/ingrid/src/ember-cli-detergent/test-fixtures/bad/bad.js',
     messages:
      [ { ruleId: 'disallowMethods',
          severity: 2,

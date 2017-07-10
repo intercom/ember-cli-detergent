@@ -6,7 +6,7 @@ var ConfigParser = require('../../../lib/parsers/config-parser');
 
 describe("config parser", function() {
   it(`throws an error when empty config`, function() {
-    var testConfig = path.join(process.cwd(), './test-fixtures/config/bad/.empty-seerrc');
+    var testConfig = path.join(process.cwd(), './test-fixtures/config/bad/.empty-detergentrc');
     expect(() => ConfigParser.loadConfig({
       configPath: testConfig,
       files: ['test-fixtures/bad']
@@ -14,7 +14,7 @@ describe("config parser", function() {
   });
 
   it(`throws an error when no blacklisted methods specified`, function() {
-    var testConfig = path.join(process.cwd(), './test-fixtures/config/bad/.no-methods-seerrc');
+    var testConfig = path.join(process.cwd(), './test-fixtures/config/bad/.no-methods-detergentrc');
     expect(() => ConfigParser.loadConfig({
       configPath: testConfig,
       files: ['test-fixtures/bad']
@@ -22,7 +22,7 @@ describe("config parser", function() {
   });
 
   it(`returns the config`, function() {
-    var testConfig = path.join(process.cwd(), './test-fixtures/config/good/.seerrc');
+    var testConfig = path.join(process.cwd(), './test-fixtures/config/good/.detergentrc');
     var expected = {
       methods: {
        'foo': {

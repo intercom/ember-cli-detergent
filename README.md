@@ -1,11 +1,11 @@
-# ember-cli-seer
+# ember-cli-detergent
 
 This README outlines the details of collaborating on this Ember addon.
 
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd ember-cli-seer`
+* `cd ember-cli-detergent`
 * `npm install`
 * `bower install`
 
@@ -29,5 +29,5 @@ For more information on using ember-cli, visit [https://ember-cli.com/](https://
 ## Releasing
 
 1. `./release [patch|minor|major]` This will create a PR for your release. Once it passes CI merge, delete the branch and then run:
-1. `git remote add fury https://[username]@git.fury.io/intercom/ember-cli-seer.git` (first time only)
+1. `git remote add fury https://[username]@git.fury.io/intercom/ember-cli-detergent.git` (first time only)
 1. `./release fury` (To push a new release to gemfury)
