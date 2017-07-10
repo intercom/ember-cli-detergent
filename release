@@ -5,23 +5,23 @@
 #./release major
 #./release fury
 
-echo '--------------------------' &&
-echo 'Grabbing the latest master' &&
-echo '--------------------------' &&
+echo "--------------------------" &&
+echo "Grabbing the latest master" &&
+echo "--------------------------" &&
 git checkout master
 git fetch origin
 git reset --hard origin/master
 
-if [[ $1 == 'fury' ]]
+if [[ $1 == "fury" ]]
 then
-  echo '------------------' &&
-  echo 'Pushing to GemFury' &&
-  echo '------------------' &&
+  echo "------------------" &&
+  echo "Pushing to GemFury" &&
+  echo "------------------" &&
   git push fury master
 else
-  echo '-------------------------------------------' &&
-  echo 'Doing a $1 release of ember-cli-seer       ' &&
-  echo '-------------------------------------------' &&
+  echo "-------------------------------------------" &&
+  echo "Doing a $1 release of ember-cli-seer       " &&
+  echo "-------------------------------------------" &&
   git branch -D ember-cli-seer/version_bump
   git checkout -b ember-cli-seer/version_bump
   npm version $1 --no-git-tag-version
