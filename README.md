@@ -25,3 +25,9 @@ This README outlines the details of collaborating on this Ember addon.
 * `ember build`
 
 For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+
+## Releasing
+
+1. `./release [patch|minor|major]` This will create a PR for your release. Once it passes CI merge, delete the branch and then run:
+1. `git remote add fury https://[username]@git.fury.io/intercom/ember-cli-seer.git` (first time only)
+1. `./release fury` (To push a new release to gemfury)
