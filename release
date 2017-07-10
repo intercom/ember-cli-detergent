@@ -1,5 +1,5 @@
 #!/bin/bash
-# Bump a release of ember-cli-seer or push the Release to Gemfury
+# Bump a release of ember-cli-detergent or push the Release to Gemfury
 #./release patch
 #./release minor
 #./release major
@@ -20,11 +20,11 @@ then
   git push fury master
 else
   echo "-------------------------------------------" &&
-  echo "Doing a $1 release of ember-cli-seer       " &&
+  echo "Doing a $1 release of ember-cli-detergent       " &&
   echo "-------------------------------------------" &&
-  git branch -D ember-cli-seer/version_bump
-  git checkout -b ember-cli-seer/version_bump
+  git branch -D ember-cli-detergent/version_bump
+  git checkout -b ember-cli-detergent/version_bump
   npm version $1 --no-git-tag-version
-  git commit package.json -m "Bump the ember-cli-seer version"
-  git push origin ember-cli-seer/version_bump
+  git commit package.json -m "Bump the ember-cli-detergent version"
+  git push origin ember-cli-detergent/version_bump
 fi

@@ -2,12 +2,12 @@
 /* eslint-env node */
 'use strict';
 
-let Seer = require('./lib/seer');
+let Detergent = require('./lib/detergent');
 
 module.exports = {
-  name: 'ember-cli-seer',
+  name: 'ember-cli-detergent',
 
   postBuild(result) {
-    Seer.track({ files: ['app', 'lib']});
+    Detergent.clean({ files: ['app', 'lib']});
   }
 };
