@@ -1,8 +1,8 @@
 module.exports = {
   methods: {
-   'foo': {
+   'htmlSafe': {
       allowed: 5,
-      message: "foo is bad"
+      message: "Please avoid using `htmlSafe` in our app"
     }
   }
 };
