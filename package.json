@@ -1,17 +1,17 @@
 {
   "name": "ember-cli-detergent",
   "version": "0.0.5",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "detect and block blacklisted javascript methods from your code. ",
   "keywords": [
     "ember-addon"
   ],
-  "license": "MIT",
-  "author": "",
+  "license": "Apache-2.0",
+  "author": "Intercom",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/intercom/ember-cli-detergent",
   "scripts": {
     "test": "mocha test"
   },
