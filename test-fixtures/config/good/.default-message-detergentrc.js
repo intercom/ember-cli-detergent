@@ -1,7 +1,7 @@
 module.exports = {
   methods: {
    'foo': {
-      allowed: 1
+      allowedCount: 1
     }
   }
 };
