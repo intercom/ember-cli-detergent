@@ -36,6 +36,6 @@ describe("detergent", function() {
     expect(() => Detergent.clean({
       configPath: testConfig,
       files: ['test-fixtures/bad']
-    })).to.throw("🔮 foo: foo is bad ✨ current count: 2; allowed: 5; don't forget to update the count in .detergentrc\n");
+    })).to.throw("🔮 htmlSafe: 👍 Thanks for removing a `htmlSafe`. Please update the `allowedCount` to 2 in `.detergentrc`");
   });
 });
