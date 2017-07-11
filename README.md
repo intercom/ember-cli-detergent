@@ -24,7 +24,7 @@ Current count: 6, maximum allowed: 5
 
 `ember install ember-cli-detergent`
 
-Create a `.detergentrc` configuration file in the root of your app.
+Create a `.detergentrc.js` configuration file in the root of your app.
 
 ## Development Instructions
 
