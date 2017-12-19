@@ -45,7 +45,6 @@
     "ember-source": "^2.11.0",
     "ember-welcome-page": "^2.0.2",
     "eslint": "3.8.0",
-    "eslint-plugin-htmlsafe": "0.0.0",
     "loader.js": "^4.0.10"
   },
   "ember-addon": {
