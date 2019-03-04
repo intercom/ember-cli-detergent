@@ -1,3 +1,5 @@
+# THIS PACKAGE IS NO LONGER MAINTAINED. IT NEVER WORKED AS INTENDED AND WE RECOMMEND YOU DO NOT USE IT.
+
 # ember-cli-detergent
 
 Ember linting tools such as [`ember-cli-eslint`](https://github.com/ember-cli/ember-cli-eslint) are a great way of enforcing coding standards and preventing bad practices from entering your Ember applications. The rules that they enforce are all or nothing, if your app already contains these bad practices you are forced to either remove all occurrences before enabling the rule, or simply not use the rule.
